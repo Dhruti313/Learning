@@ -16,14 +16,25 @@ public class freqHashMap  {
             else{
                 map.put(arr[i],1);
             }
-
-
         }
-        System.out.print("[");
+        int arr2 =0;
+//        System.out.print("[");
         for(Map.Entry<Integer,Integer> e : map.entrySet()){
-            System.out.print(e.getKey()+", ");
+//            System.out.print(e.getKey()+", ");
+//             arr2 = e.getKey();
+
+            if(arr2==4){
+                System.out.println(e.getKey());
+            }
+            arr2 +=1;
+
+
         }
-        System.out.print("]");
+//        System.out.print("]");
+//        System.out.println(arr2 );
+
+
+        
 
     }
 }

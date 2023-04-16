@@ -20,7 +20,7 @@ public class Secondlargest {
          for(int i = 0 ; i < arr.length ; i++){
              System.out.println( +arr[i] +" ");
          }
-        System.out.println("Largest elemet is "  +arr[0]);
+        System.out.println("Largest element is "  +arr[0]);
         System.out.println("Second largest element is "+arr[1]);
     }
 }

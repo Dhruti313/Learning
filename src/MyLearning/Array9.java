@@ -10,16 +10,16 @@ public class Array9 {
         System.out.println("Enter the Array Size");
 
         int n = scanner.nextInt();
-        int arr[] =  new int[n];
+
+        int arr[] = new int[n];
 
         System.out.println("Enter the elements of Array");
-
 
         for( int i = 0 ; i<n ; i++){
             arr[i] = scanner.nextInt();
 
         }
-        System.out.println("Array elemnts are :");
+        System.out.println("Array elements are :");
 
         for( int j = 0 ; j<n ; j++){
             System.out.println(arr[j]);

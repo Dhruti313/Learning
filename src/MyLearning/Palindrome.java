@@ -3,28 +3,23 @@ package MyLearning;
 import java.util.Scanner;
 
 public class Palindrome {
-    public static void main(String [] args){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the String");
-
-        String d = scanner.nextLine();
-
-        System.out.println(d);
-
-        for(int i = 0 ; i<d.length() ; i ++){
-          if(d.charAt(i) == d.charAt(d.length()-1-i)){
-              System.out.println("yes");
-
+    public static boolean checkpalindrome(){
+        String str = "civic";
+        for(int i = 0 ; i<str.length() ; i++){
+            for(int j = str.length() -1; j>=0 ; j--){
+                if(str.charAt(i) != str.charAt(j)){
+                    return false;
+                }
+                else {
+                    return true;
+                }
             }
-          else{
-              System.out.println("no");
-          }
 
         }
-
-
-
-
+        return true;
+    }
+    public static void main(String [] args){
+        System.out.println( checkpalindrome());
 
 
     }
