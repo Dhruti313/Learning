@@ -1,8 +1,12 @@
 package MyLearning;
 
+import java.util.Arrays;
+
 public class Secondlargest {
     public static void main(String args[]){
         int arr[]= {10,40,23,56,1};
+
+
 
         int temp ;
 
