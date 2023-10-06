@@ -26,7 +26,5 @@ public class Bubble2 {
 
         }
         printArray(arr);
-
-
     }
 }

@@ -1,6 +1,6 @@
 package Package2array;
 
-import java.util.Arrays;
+
 
 public class ArraySame {
     public static boolean Check() {

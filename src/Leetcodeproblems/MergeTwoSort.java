@@ -20,7 +20,6 @@ public class MergeTwoSort {
 
         while(it.hasNext()){
             System.out.print(it.next()+" ");
-
         }
 System.out.println();
         Iterator<Integer> it2 = list2.iterator();

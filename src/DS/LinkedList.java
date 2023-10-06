@@ -14,6 +14,7 @@ public class LinkedList {
     }
 
     public void addFirst(String data) {
+
         Node newnode = new Node(data);
         if (head == null) {
             head = newnode;

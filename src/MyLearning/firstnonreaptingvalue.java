@@ -16,12 +16,8 @@ public class firstnonreaptingvalue {
                 map.put(arr[i], 1);
             }
         }
-
         for (Map.Entry<Character, Integer> e : map.entrySet()) {
             System.out.println(e.getKey() + " "+e.getValue());
-
-
-
 if(e.getValue() ==1) {
 
     System.out.println("first non repeating element is : " + e.getKey());

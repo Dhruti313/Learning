@@ -2,7 +2,6 @@ package DS;
 
 public class LL {
     Node head;
-
     class Node {
         int data;
         Node next;
@@ -22,33 +21,30 @@ public class LL {
             head = newnode;
         }
         public void printData(){
-            if(head == null)
+            if(head == null){
                 System.out.println("list is empty");
-
+                return;
+            }
                 Node currnode = head;
                 while(currnode!= null){
                     System.out.print(currnode.data+"--> ");
                     currnode = currnode.next;
-
-
             }
             System.out.print("NULL");
         }
-        public void revrseList(){
-        Node prev = null;
-        Node Other = null;
+        public void revrseList() {
+            Node prev = null;
+            Node Other = null;
 
-        while(head!= null){
-            Other = head.next;
-            head.next = prev;
-            prev = head;
-            head = Other;
+            while (head != null) {
+                Other = head.next;
+                head.next = prev;
+                prev = head;
+                head = Other;
+            }
+            head = prev;
+
         }
-        head = prev;
-
-        }
-
-
         public static void main(String args[]){
             LL ll = new LL();
             ll.addData(1);

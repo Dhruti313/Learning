@@ -19,7 +19,6 @@ public class Duplicate {
 
                 map.put(ch[i] , 1);
 
-
             }
 
         }

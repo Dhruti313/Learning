@@ -1,6 +1,8 @@
 package Leetcodeproblems;
 
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 public class ContainsDuplicate {
@@ -18,9 +20,10 @@ public class ContainsDuplicate {
             else{
                 map.put(nums[i] , 1);
             }
-
+        }
+       for(Map.Entry<Integer , Integer> res : map.entrySet()) {
+            System.out.println(res.getKey() + "-->" +res.getValue());
         }
         return false;
-
     }
 }

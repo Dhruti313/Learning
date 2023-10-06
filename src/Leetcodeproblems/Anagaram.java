@@ -39,7 +39,7 @@ public class Anagaram {
             }
         }
 
-        return false;
+        return true;
     }
 }
 

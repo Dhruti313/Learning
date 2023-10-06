@@ -9,11 +9,8 @@ char c = 'e';
         for(int i = 0 ; i<str.length() ; i++){
             if(str.charAt(i) == 'e'){
                 count =i;
-
             }
-
-
-                }
+        }
         System.out.println(count);
             }
         }

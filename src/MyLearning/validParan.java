@@ -3,33 +3,29 @@ package MyLearning;
 import java.util.Stack;
 
 public class validParan {
-    public static boolean isValid(char[] charArray) {
-        Stack<Character> container = new Stack<Character>();
+    public static boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
 
-        for (char c : charArray) {
-            System.out.println(c);
-            if (c == '(' || c == '{' || c == '[') {
-                container.push(c);
-            }
-            else if ( !container.empty() && ((c == ')') && container.peek() == '(' ||
-                    (c == '}') && container.peek() == '{' || (c == ']') && container.peek() == '[')) {
-                container.pop();
-
+        for (char c : s.toCharArray()) {
+            if (c == '(' || c == '[' || c == '{') {
+                stack.push(c);
+            } else if (c == ')' && !stack.isEmpty() && stack.peek() == '(') {
+                stack.pop();
+            } else if (c == ']' && !stack.isEmpty() && stack.peek() == '[') {
+                stack.pop();
+            } else if (c == '}' && !stack.isEmpty() && stack.peek() == '{') {
+                stack.pop();
             } else {
-                return false;
+                return false; // Invalid character or unbalanced brackets
             }
-
         }
-        return container.isEmpty();
 
+        return stack.isEmpty(); // The stack should be empty if brackets are balanced
     }
-    public static void main(String args[]){
 
-
-    System.out.println( isValid("([{}])".toCharArray()));
-
-
-
-
+    public static void main(String[] args) {
+        String input = "([{}])";
+        boolean result = isValid(input);
+        System.out.println(result);
     }
 }

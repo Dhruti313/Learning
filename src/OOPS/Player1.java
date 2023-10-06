@@ -19,7 +19,7 @@ public class Player1 {
         al.add(p4);
         al.add(p5);
 
-        al.sort(Comparator.comparing(a -> a.playername));
+//        al.sort(Comparator.comparing(a -> a.playername));
 
 
         int max = 0;
@@ -34,10 +34,17 @@ public class Player1 {
 return al;
 
     }
-    public static void dispaly(ArrayList<Player> al){
+    public static void display(ArrayList<Player> al){
         for(Player e : al){
             e.display();
         }
     }
+    public static void main(String ars[]){
+        ArrayList<Player> al = new ArrayList<>();
+        createplayer();
+        display(al);
+    }
+
+
 }
 

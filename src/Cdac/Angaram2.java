@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Angaram2 {
     public static boolean copy(){
         String s1 = "abcdef";
-        String s2 = "zyxklv";
+        String s2 = "fecdba";
 
 
         char[] ch = s1.toCharArray();

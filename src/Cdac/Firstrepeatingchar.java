@@ -8,7 +8,6 @@ public class Firstrepeatingchar {
     public static void main(String args[]) {
         String s = "cdac banglore is nice place";
         char[] ch = s.toCharArray();
-        String j = " ";
 
         Map<Character, Integer> map = new LinkedHashMap<>();
         for (int i = 0; i < s.length(); i++) {
@@ -19,14 +18,11 @@ public class Firstrepeatingchar {
             else{
 
                 map.put(ch[i] , 1);
-
-
             }
-
         }
-        for(Map.Entry<Character , Integer> e : map.entrySet()){
-
-            System.out.print(e.getKey() );
-        }
+//        for(Map.Entry<Character , Integer> e : map.entrySet()){
+//
+////            System.out.print(e.getKey() );
+//        }
     }
 }

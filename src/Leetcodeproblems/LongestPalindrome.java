@@ -39,7 +39,7 @@ public class LongestPalindrome {
                 if (s.charAt(l) == s.charAt(r)) {
                     l--;
                     r++;
-//                    System.out.println(s.charAt(i));
+                   System.out.println(s.charAt(i));
                 }
                 else {
                     break;

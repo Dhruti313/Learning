@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SortArrayAscending {
     public static void main(String args[]){
-        int a [] = {1,4,-9,-3,34};
+        int a [] = {1,4,9,3,34};
 
         for(int i = 0 ; i<a.length ; i++){
             for(int j = i+1 ; j<a.length ; j++){
@@ -16,7 +16,7 @@ public class SortArrayAscending {
                 }
             }
         }
-        for(int i =a.length-1; i>=0 ; i--){
+        for(int i =0; i<a.length ; i++){
             System.out.print(a[i]+" ");
         }
 //        System.out.println();

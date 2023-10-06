@@ -1,8 +1,8 @@
-package LearningNew;
+package JavaAssignment_;
 
 import java.util.Scanner;
 
-public class MatrixRowCol {
+public class MatrixRowCol_ {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the first string");
@@ -18,32 +18,21 @@ public class MatrixRowCol {
                 matrix[i][j] = '*';
             }
         }
-        //printing fIrst elements
+        //printing first elements
         int row = 1;
         int col = 2;
         for(int  i = 0 ; i<str1.length() ; i++){
             matrix[row][col]=str1.charAt(i);
             row++;
         }
-       // finidng common elem
-        if(str1.length() == str2.length()){
-            for(int  i = 0 ; i<str1.length() ; i++){
-                for(int j =0 ; j <str2.length() ; j++){
-                    if(str1.charAt(j) == str2.charAt(j)){
-                        col = j;
-                        break;
-                    }
-                }
-            }
-        }
-        else{
-            for(int i = 0 ; i<str2.length() ; i++){
+
+        for(int i = 0 ; i<str2.length() ; i++){
                 if(str2.charAt(i)=='A'){
                     col = i;
                     break;
                 }
             }
-        }
+
         // printing second elem
         row= 2;
         for(int i = 0 ; i <str2.length() ; i++){

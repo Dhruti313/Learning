@@ -29,10 +29,8 @@ public class AnarambyHashmap {
 
     }
     public static void main(String args[]){
-        String s1 = "abcdef";
-        String s2 = "fdecab";
-
-
+        String s1 = "abadef";
+        String s2 = "fdmdab";
         System.out.println(anagram(s1 , s2));
     }
 }

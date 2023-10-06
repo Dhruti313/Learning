@@ -22,9 +22,5 @@ public class RetainAllMethodToFIndCommon {
 
         arraylist.retainAll(arraylist2);
         System.out.println(arraylist);
-
-
-
-
     }
 }

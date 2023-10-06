@@ -3,10 +3,11 @@ package Arraylistandpractise;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class Book {
-    String bookName;
-    String authorName;
-    float price;
+     String bookName;
+     String authorName;
+     float price;
 
     public Book(String bookName , String authorName , float price){
         this.bookName = bookName;
@@ -15,9 +16,11 @@ public class Book {
 
 
     }
-    void Display(String f){
-        System.out.println(bookName+" "+authorName+" "+price+f);
+     void Display()
+    {
+        System.out.println(bookName+" "+authorName+" "+price);
     }
+
     public static void main(String args[]){
         HashMap<Integer,Book> m = new HashMap<>();
         Book b1 = new Book("Let us C","Yashwant Kanetkar",400);
@@ -28,10 +31,13 @@ public class Book {
         m.put(102,b2);
         m.put(103,b3);
 
-        for(Map.Entry<Integer , Book> e :m.entrySet()){
-            System.out.println(e.getKey());
-            e.getValue().Display("fff");
+        for(Map.Entry<Integer , Book> e :m.entrySet()) {
+           System.out.println(e.getKey());
+            Book b = e.getValue();
+            b.Display();
+
         }
     }
+
 
 }
