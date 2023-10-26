@@ -1,6 +1,6 @@
 package PracticeForTest;
 
-public class Queue {
+public class Queue<I extends Number> {
     int maxsize;
     int queue[];
     int front;
@@ -48,7 +48,7 @@ public class Queue {
         }
     }
     public static void main(String args[]){
-        Queue q = new Queue(5);
+        Queue<Number> q = new Queue<Number>(5);
         q.enqeue(10);
         q.enqeue(20);
         q.enqeue(30);

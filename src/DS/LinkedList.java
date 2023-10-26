@@ -1,6 +1,6 @@
 package DS;
 
-public class LinkedList {
+public class LinkedList<I extends Number> {
     Node head;
 
     class Node {
@@ -89,7 +89,7 @@ public class LinkedList {
         temp.next = newnode;
     }
     public static void main(String args[]){
-        LinkedList list = new LinkedList();
+        LinkedList<Number> list = new LinkedList<Number>();
         list.addFirst("a");
         list.addFirst("is");
 //        list.printlist();
